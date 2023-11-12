@@ -18,7 +18,8 @@ fi
 ARCH=x86_64
 output_dir="flatpak"
 
-rm -rf "./target" "./strongbox"
+rm -rf "./strongbox"
+rm -rf "./strongbox/target"
 rm -rf "./$output_dir"
 mkdir -p "./$output_dir"
 
@@ -71,7 +72,12 @@ cp la.ogri.strongbox.yml la.ogri.strongbox.metainfo.xml strongbox.svg strongbox.
 
     echo "--- building"
     # export flatpak to local repo
-    flatpak-builder --user --repo ./repo --force-clean "$build_dir" "$manifest"
+    # --user                             Install dependencies in user installations
+    # --repo=DIR                         Repo to export into
+    # --force-clean                      Erase previous contents of DIRECTORY
+    # --keep-build-dirs                  Don't remove build directories after install
+    # --disable-download                 Don't download any new sources
+    flatpak-builder --user --repo ./repo --force-clean --keep-build-dirs --disable-download "$build_dir" "$manifest"
 
     echo "--- installing"
     flatpak install --user --reinstall --noninteractive ./repo "$appid"
