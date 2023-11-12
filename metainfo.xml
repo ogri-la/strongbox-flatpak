@@ -19,7 +19,7 @@
         </p>
     </description>
 
-    <launchable type="desktop-id">strongbox.desktop</launchable>
+    <launchable type="desktop-id">la.ogri.strongbox.desktop</launchable>
     <screenshots>
         <screenshot type="default">
             <image>https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/0.0.1/screenshots/installed.png</image>
