@@ -52,7 +52,7 @@ flatpak install \
     org.freedesktop.Sdk//23.08 \
     org.freedesktop.Sdk.Extension.openjdk11//23.08
 
-cp la.ogri.strongbox.yml la.ogri.strongbox.metainfo.xml strongbox.svg strongbox.desktop "$output_dir/"
+cp la.ogri.strongbox.yml metainfo.xml strongbox.svg strongbox.desktop "$output_dir/"
 
 (
     cd "$output_dir"
