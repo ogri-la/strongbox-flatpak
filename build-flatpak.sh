@@ -68,8 +68,6 @@ cp la.ogri.strongbox.yml metainfo.xml strongbox.svg strongbox.desktop "$output_d
         exit 1
     fi
 
-    # todo: add 'Appdata': application metadata, like version etc
-
     echo "--- building"
     # export flatpak to local repo
     # --user                             Install dependencies in user installations

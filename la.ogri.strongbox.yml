@@ -44,7 +44,7 @@ modules:
 
         - type: file
           path: strongbox.svg
-          #url: https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/0.0.1/strongbox.desktop
+          #url: https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/0.0.1/strongbox.svg
           #sha256: e8d68fd32e96834d12940df27c2fd4c05fa303c1473e8f50b6a3a93f283bc2fc
 
       build-commands:
