@@ -34,7 +34,7 @@ modules:
 
         - type: file
           path: metainfo.xml
-          #url: https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/0.0.1/metainfo.xml
+          #url: https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/0.0.2/metainfo.xml
           #sha256: 722889ccf892b0cddc2f1c1cf2329e6bed208e2c7d7d5b87006ebd0ecf4ae78f
 
         - type: file
