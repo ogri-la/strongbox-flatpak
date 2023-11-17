@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop-application">
     <id>la.ogri.strongbox</id>
-    <name>strongbox</name>
+    <name>Strongbox</name>
 
     <keywords>
         <keyword>warcraft</keyword>
@@ -12,10 +12,10 @@
     <project_license>AGPL-3.0-only</project_license>
     <metadata_license>CC0-1.0</metadata_license>
 
-    <summary>strongbox is an addon manager for World of Warcraft</summary>
+    <summary>An addon manager for World of Warcraft</summary>
     <description>
         <p>
-            strongbox is an open source, advertisement free and privacy respecting addon manager for World of Warcraft.
+            Strongbox is an open source, advertisement free and privacy respecting addon manager for World of Warcraft.
         </p>
     </description>
 
