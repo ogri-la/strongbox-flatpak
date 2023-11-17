@@ -18,8 +18,8 @@ fi
 ARCH=x86_64
 output_dir="flatpak"
 
+#rm -rf "./strongbox/target"
 rm -rf "./strongbox"
-rm -rf "./strongbox/target"
 rm -rf "./$output_dir"
 mkdir -p "./$output_dir"
 
@@ -47,6 +47,7 @@ echo "--- installing Flatpak runtime"
 flatpak install \
     --noninteractive \
     --arch "$ARCH" \
+    --system \
     flathub \
     org.freedesktop.Platform//23.08 \
     org.freedesktop.Sdk//23.08 \
@@ -76,6 +77,11 @@ cp la.ogri.strongbox.yml metainfo.xml strongbox.svg strongbox.desktop "$output_d
     # --keep-build-dirs                  Don't remove build directories after install
     # --disable-download                 Don't download any new sources
     flatpak-builder --user --repo ./repo --force-clean --keep-build-dirs --disable-download "$build_dir" "$manifest"
+
+    #echo "--- linting"
+    #flatpak remote-add --if-not-exists --user flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+    #flatpak install --user --noninteractive flathub org.flatpak.Builder
+    #flatpak run --command=flatpak-builder-lint org.flatpak.Builder --exceptions manifest la.ogri.strongbox.yml
 
     echo "--- installing"
     flatpak install --user --reinstall --noninteractive ./repo "$appid"
