@@ -19,7 +19,7 @@ ARCH=x86_64
 output_dir="flatpak"
 
 #rm -rf "./strongbox/target"
-rm -rf "./strongbox"
+#rm -rf "./strongbox"
 rm -rf "./$output_dir"
 mkdir -p "./$output_dir"
 

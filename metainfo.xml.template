@@ -14,9 +14,7 @@
 
     <summary>An addon manager for World of Warcraft</summary>
     <description>
-        <p>
-            Strongbox is an open source, advertisement free and privacy respecting addon manager for World of Warcraft.
-        </p>
+        <p>Strongbox is an open source, advertisement free and privacy respecting addon manager for World of Warcraft.</p>
     </description>
 
     <launchable type="desktop-id">la.ogri.strongbox.desktop</launchable>
@@ -47,7 +45,6 @@
 
     <content_rating type="oars-1.0" />
 
-    <releases>
-        <release version="7.0.0" date="2023-06-11" />
-    </releases>
+{releases}
+
 </component>
