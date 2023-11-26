@@ -52,6 +52,34 @@
   <url type="vcs-browser">https://github.com/ogri-la/strongbox</url>
   <content_rating type="oars-1.0"/>
   <releases>
+    <release version="7.1.0" date="2023-11-26">
+      <description>
+        <p>Added</p>
+        <ul>
+          <li>added checkbox to bottom of search tab that will toggle search results sampling when search results are unfiltered.</li>
+          <li>added patch tooltips for Dragonflight 10.1 and 10.2</li>
+          <li>added support for the `NO_COLOR` environment variable.</li>
+          <li>added new command line action `print-config` that prints the final config and exits.</li>
+          <li>added new information captured from the environment when using `--debug` or `--action print-config`.</li>
+          <li>added plain-text and JSON views of the raw addon data to the 'raw data' widget on the addon detail tab.</li>
+          <li>added new preference 'check for update' that toggles checking for an update to Strongbox on startup (default is `true`).</li>
+          <li>added new command line flag `--update-check` and it's complement `--no-update-check` that toggles update checks.</li>
+          <li>added Flatpak distribution hosted by Flathub</li>
+        </ul>
+        <p>Changed</p>
+        <ul>
+          <li>bumped JavaFX dependencies from 17.x to 19.x.</li>
+          <li>removed the fixed widths on the 'updated' and 'downloads' columns in the search pane.</li>
+          <li>some `info` level logging has been dropped to `debug` to reduce console noise.</li>
+        </ul>
+        <p>Fixed</p>
+        <ul>
+          <li>tag buttons in search pane are now centred vertically.</li>
+          <li>selecting hosts in search pane no longer samples results.</li>
+          <li>'interface version' was being treated as an integer and being localised in the raw data widget.</li>
+        </ul>
+      </description>
+    </release>
     <release version="7.0.0" date="2023-06-11">
       <description>
         <p>Added</p>
