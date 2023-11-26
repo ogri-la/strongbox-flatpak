@@ -275,7 +275,7 @@
         <p>Changed</p>
         <ul>
           <li>replaced 'View -&gt; Columns -&gt; Reset to defaults' with the 'default' column preset.</li>
-          <li>github catalogue tweaks to support latest version of https://github.com/layday/github-wow-addon-catalogue</li>
+          <li>github catalogue tweaks to support latest version of layday's `github-wow-addon-catalogue`.</li>
           <li>column preferences in the config file are now upgraded to the new default column set.</li>
           <li>minor, errors/warning/info messages that appeared across multiple messages are now just one message.</li>
           <li>curseforge February deprecation notice is now the definitive "no longer supported".</li>
@@ -723,13 +723,13 @@
       <description>
         <p>Added</p>
         <ul>
-          <li>another type of code linting, provided by [Joker](https://joker-lang.org/)</li>
+          <li>another type of code linting, provided by Joker.</li>
           <li>a `--debug` flag that will run strongbox with lots of output and write a log file.</li>
           <li>ticket templates with instructions on using the new `--debug` flag</li>
         </ul>
         <p>Changed</p>
         <ul>
-          <li>'wowman' was renamed 'strongbox' in [the list](https://ogri-la.github.io/wow-addon-managers/)</li>
+          <li>'wowman' was renamed 'strongbox' in The List</li>
           <li>split 'tukui' into 'tukui' and 'tukui-classic' in the 'source' column</li>
           <li>the number of addons displayed in the search results is now tuned according to number of addons in catalogue</li>
           <li>'WoW Directory' has moved to the other side of the addon directory drop down and has been renamed 'Addon directory'</li>
