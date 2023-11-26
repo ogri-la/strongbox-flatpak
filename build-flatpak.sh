@@ -43,11 +43,14 @@ cp ./strongbox/target/*-standalone.jar "$output_dir/app.jar"
 
 # ---
 
+echo "--- adding Flathub remote"
+flatpak --user remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
 echo "--- installing Flatpak runtime"
 flatpak install \
-    --noninteractive \
+    --assumeyes \
     --arch "$ARCH" \
-    --system \
+    --user \
     flathub \
     org.freedesktop.Platform//23.08 \
     org.freedesktop.Sdk//23.08 \
@@ -84,7 +87,7 @@ cp la.ogri.strongbox.yml metainfo.xml strongbox.svg strongbox.desktop "$output_d
     #flatpak run --command=flatpak-builder-lint org.flatpak.Builder --exceptions manifest la.ogri.strongbox.yml
 
     echo "--- installing"
-    flatpak install --user --reinstall --noninteractive ./repo "$appid"
+    flatpak install --user --reinstall --assumeyes ./repo "$appid"
 
     # create a standalone .flatpak 'bundle' file. requires a repo.
     #flatpak build-bundle ./repo "$output_filename" "$appid" "$tag"
