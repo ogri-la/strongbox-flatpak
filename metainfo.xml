@@ -11,10 +11,10 @@
   <metadata_license>CC0-1.0</metadata_license>
   <summary>Addon manager for World of Warcraft</summary>
   <description>
-    <p>Strongbox is an <em>open source</em>, <em>advertisement free</em> and <em>privacy respecting</em> addon manager for World of Warcraft.</p>
+    <p>Strongbox is an open source, advertisement free and privacy respecting addon manager for World of Warcraft.</p>
     <p>Features:</p>
     <ul>
-      <li>install addons from <em>wowinterface.com</em>, <em>Github</em> and <em>Gitlab</em></li>
+      <li>install addons from wowinterface.com, Github and Gitlab</li>
       <li>searchable catalogue of thousands of addons</li>
       <li>classic and retail addon support</li>
       <li>bulk update</li>
@@ -24,27 +24,26 @@
       <li>pin addons to a specific version</li>
       <li>install previous versions of an addon</li>
     </ul>
-    <p>... and more: https://ogri.la</p>
   </description>
   <launchable type="desktop-id">la.ogri.strongbox.desktop</launchable>
   <screenshots>
     <screenshot type="default">
-      <image>https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/0.0.3/screenshots/installed.png</image>
+      <image>https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/7.2.0/screenshots/installed.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/0.0.3/screenshots/dark-installed.png</image>
+      <image>https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/7.2.0/screenshots/dark-installed.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/0.0.3/screenshots/installed-fat.png</image>
+      <image>https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/7.2.0/screenshots/installed-fat.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/0.0.3/screenshots/dark-installed-fat.png</image>
+      <image>https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/7.2.0/screenshots/dark-installed-fat.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/0.0.3/screenshots/installed-skinny.png</image>
+      <image>https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/7.2.0/screenshots/installed-skinny.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/0.0.3/screenshots/dark-installed-skinny.png</image>
+      <image>https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/7.2.0/screenshots/dark-installed-skinny.png</image>
     </screenshot>
   </screenshots>
   <url type="homepage">https://github.com/ogri-la/strongbox</url>
@@ -52,6 +51,29 @@
   <url type="vcs-browser">https://github.com/ogri-la/strongbox</url>
   <content_rating type="oars-1.0"/>
   <releases>
+    <release version="7.2.0" date="2023-12-24">
+      <description>
+        <p>Added</p>
+        <ul>
+          <li>`x-website` Github URLs in `.toc` files are now treated as a Github source that an addon can be switched to.</li>
+        </ul>
+        <p>Changed</p>
+        <ul>
+          <li>moved AppImage building to `ogri-la/strongbox-appimage`.</li>
+          <li>consolidated all the `.sh` into a single `manage.sh` script.</li>
+        </ul>
+        <p>Fixed</p>
+        <ul>
+          <li>fixed bug preventing classic Wrath `.toc` from being detected and loaded.</li>
+          <li>fixed bug in catalogue location spec where a value that should have been validating as a URL was not.</li>
+          <li>removed `x-tukui-id` source detection in `.toc` files. Tukui no longer hosts addons so these can't be used.</li>
+        </ul>
+        <p>Removed</p>
+        <ul>
+          <li>removed `release.sh` as it had been unused for several years.</li>
+        </ul>
+      </description>
+    </release>
     <release version="7.1.0" date="2023-11-26">
       <description>
         <p>Added</p>
