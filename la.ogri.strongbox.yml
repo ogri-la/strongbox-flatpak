@@ -23,24 +23,24 @@ modules:
       buildsystem: simple
       sources:
         - type: file
-          url: https://github.com/ogri-la/strongbox/releases/download/7.2.0/strongbox-7.2.0-standalone.jar
+          url: https://github.com/ogri-la/strongbox/releases/download/7.3.0/strongbox-7.3.0-standalone.jar
           dest-filename: app.jar
-          sha256: 6d5742291b4a4a8aef12f53e389416642b91ae21e5a1e3a1514b222d856c160e
+          sha256: d9653aa4e39f86db9828c87208dc8742d8728c2bf8fbc702b2b6d51b282fa78f
 
         - type: script
           commands:
             - /app/jre/bin/java -jar /app/bin/app.jar "$@"
 
         - type: file
-          url: https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/7.2.0/metainfo.xml
-          sha256: fe343a0da38a6f84ab79228bfadfcb00ef7226f2a0b386d09cb3f9a33611eef3
+          url: https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/7.3.0/metainfo.xml
+          sha256: 017e27d5c974e899d565763618b465db485b44a9030e600682b878f60587662e
 
         - type: file
-          url: https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/7.2.0/strongbox.desktop
+          url: https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/7.3.0/strongbox.desktop
           sha256: 19becba62d621c8f207b66b618e8fe4c55590a39cfb5eaf6a10ca8f809c51729
 
         - type: file
-          url: https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/7.2.0/strongbox.svg
+          url: https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/7.3.0/strongbox.svg
           sha256: e8d68fd32e96834d12940df27c2fd4c05fa303c1473e8f50b6a3a93f283bc2fc
 
       build-commands:

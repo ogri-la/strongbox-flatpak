@@ -28,22 +28,22 @@
   <launchable type="desktop-id">la.ogri.strongbox.desktop</launchable>
   <screenshots>
     <screenshot type="default">
-      <image>https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/7.2.0/screenshots/installed.png</image>
+      <image>https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/7.3.0/screenshots/installed.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/7.2.0/screenshots/dark-installed.png</image>
+      <image>https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/7.3.0/screenshots/dark-installed.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/7.2.0/screenshots/installed-fat.png</image>
+      <image>https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/7.3.0/screenshots/installed-fat.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/7.2.0/screenshots/dark-installed-fat.png</image>
+      <image>https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/7.3.0/screenshots/dark-installed-fat.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/7.2.0/screenshots/installed-skinny.png</image>
+      <image>https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/7.3.0/screenshots/installed-skinny.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/7.2.0/screenshots/dark-installed-skinny.png</image>
+      <image>https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/7.3.0/screenshots/dark-installed-skinny.png</image>
     </screenshot>
   </screenshots>
   <url type="homepage">https://github.com/ogri-la/strongbox</url>
@@ -51,6 +51,24 @@
   <url type="vcs-browser">https://github.com/ogri-la/strongbox</url>
   <content_rating type="oars-1.0"/>
   <releases>
+    <release version="7.3.0" date="2024-04-23">
+      <description>
+        <p>Added</p>
+        <ul>
+          <li>added support for Cataclysm Classic.</li>
+        </ul>
+        <p>Changed</p>
+        <ul>
+          <li>dependencies bumped to latest versions.</li>
+          <li>game track priority when 'strict' is off now has a proper and consistent strategy.</li>
+        </ul>
+        <p>Fixed</p>
+        <ul>
+          <li>bumps Clojure from 1.10 to 1.11.2 to fix CVE-2024-22871</li>
+          <li>an Arch Linux AUR bug introduced with pacman 6.1 that stripped the binary down to nothing.</li>
+        </ul>
+      </description>
+    </release>
     <release version="7.2.0" date="2023-12-24">
       <description>
         <p>Added</p>
