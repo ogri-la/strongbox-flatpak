@@ -8,9 +8,6 @@
     <keyword>addon manager</keyword>
   </keywords>
   <project_license>AGPL-3.0-only</project_license>
-  <developer id="la.ogri">
-    <name>Torkus</name>
-  </developer>
   <metadata_license>CC0-1.0</metadata_license>
   <summary>Addon manager for World of Warcraft</summary>
   <description>
@@ -31,22 +28,22 @@
   <launchable type="desktop-id">la.ogri.strongbox.desktop</launchable>
   <screenshots>
     <screenshot type="default">
-      <image>https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/7.3.0/screenshots/installed.png</image>
+      <image>https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/7.4.0/screenshots/installed.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/7.3.0/screenshots/dark-installed.png</image>
+      <image>https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/7.4.0/screenshots/dark-installed.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/7.3.0/screenshots/installed-fat.png</image>
+      <image>https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/7.4.0/screenshots/installed-fat.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/7.3.0/screenshots/dark-installed-fat.png</image>
+      <image>https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/7.4.0/screenshots/dark-installed-fat.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/7.3.0/screenshots/installed-skinny.png</image>
+      <image>https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/7.4.0/screenshots/installed-skinny.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/7.3.0/screenshots/dark-installed-skinny.png</image>
+      <image>https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/7.4.0/screenshots/dark-installed-skinny.png</image>
     </screenshot>
   </screenshots>
   <url type="homepage">https://github.com/ogri-la/strongbox</url>
@@ -54,6 +51,34 @@
   <url type="vcs-browser">https://github.com/ogri-la/strongbox</url>
   <content_rating type="oars-1.0"/>
   <releases>
+    <release version="7.4.0" date="2024-07-19">
+      <description>
+        <p>Added</p>
+        <ul>
+          <li>added support for parsing multiple interface version values from .toc file.</li>
+          <li>added entries to the known patch list for the recent major Dragonflight patches and The War Within.</li>
+        </ul>
+        <p>Changed</p>
+        <ul>
+          <li>the WoW column in the GUI now supports displaying multiple game versions (like 8.0, 9.0, 10.0).</li>
+          <li>the raw data GUI widget in the addon details pane now supports displaying multiple interface versions.</li>
+          <li>replaced references to the old wiki with the new wiki (warcraft.wiki.gg).</li>
+          <li>bumped dependencies.</li>
+        </ul>
+        <p>Fixed</p>
+        <ul>
+          <li>fixed a typo in a field name in the import/export logic.</li>
+          <li>fixed a bug in the interface-version =&gt; game-version logic where 110000 was returned as '1.0.000' instead of '11.0.0'.</li>
+        </ul>
+        <p>Removed</p>
+        <ul>
+          <li>removed curseforge and tukui test fixtures and the fetching of test fixtures.</li>
+          <li>removed support for 'release labels' attached to addon source updates.</li>
+          <li>removed more curseforge and tukui logic that was disabled many releases ago.</li>
+          <li>removed support for interface versions in .toc files containing non-numeric values.</li>
+        </ul>
+      </description>
+    </release>
     <release version="7.3.0" date="2024-04-23">
       <description>
         <p>Added</p>
