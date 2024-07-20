@@ -8,6 +8,9 @@
     <keyword>addon manager</keyword>
   </keywords>
   <project_license>AGPL-3.0-only</project_license>
+  <developer id="la.ogri">
+    <name>Torkus</name>
+  </developer>
   <metadata_license>CC0-1.0</metadata_license>
   <summary>Addon manager for World of Warcraft</summary>
   <description>
