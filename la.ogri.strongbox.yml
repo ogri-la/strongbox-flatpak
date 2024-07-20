@@ -33,7 +33,7 @@ modules:
 
         - type: file
           url: https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/7.4.0/metainfo.xml
-          sha256: 7dc3d94abb0bff26126788ccc56610ee6870c2246069cc754816909387bc21e3
+          sha256: 2c1b8edfd6477e96924152e55c77d0d9f66bff7d63e70b96a8655e693671fc67
 
         - type: file
           url: https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/7.4.0/strongbox.desktop
