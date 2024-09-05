@@ -37,7 +37,7 @@ modules:
 
         - type: file
           url: https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/7.4.0/strongbox.desktop
-          sha256: 19becba62d621c8f207b66b618e8fe4c55590a39cfb5eaf6a10ca8f809c51729
+          sha256: 960bcf565329cfd9f41f0e744a43071048e340578e04495b5c3d617a2f8408e5
 
         - type: file
           url: https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/7.4.0/strongbox.svg

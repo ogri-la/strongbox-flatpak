@@ -1,7 +1,7 @@
 [Desktop Entry]
 Type=Application
 Version=1.0
-Name=Strongbox (Flatpak)
+Name=Strongbox
 GenericName=addon manager
 Comment=World of Warcraft addon manager
 Exec=
