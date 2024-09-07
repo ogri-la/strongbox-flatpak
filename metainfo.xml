@@ -8,9 +8,6 @@
     <keyword>addon manager</keyword>
   </keywords>
   <project_license>AGPL-3.0-only</project_license>
-  <developer id="la.ogri">
-    <name>Torkus</name>
-  </developer>
   <metadata_license>CC0-1.0</metadata_license>
   <summary>Addon manager for World of Warcraft</summary>
   <description>
@@ -31,22 +28,22 @@
   <launchable type="desktop-id">la.ogri.strongbox.desktop</launchable>
   <screenshots>
     <screenshot type="default">
-      <image>https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/7.4.0/screenshots/installed.png</image>
+      <image>https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/7.5.0/screenshots/installed.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/7.4.0/screenshots/dark-installed.png</image>
+      <image>https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/7.5.0/screenshots/dark-installed.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/7.4.0/screenshots/installed-fat.png</image>
+      <image>https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/7.5.0/screenshots/installed-fat.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/7.4.0/screenshots/dark-installed-fat.png</image>
+      <image>https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/7.5.0/screenshots/dark-installed-fat.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/7.4.0/screenshots/installed-skinny.png</image>
+      <image>https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/7.5.0/screenshots/installed-skinny.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/7.4.0/screenshots/dark-installed-skinny.png</image>
+      <image>https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/7.5.0/screenshots/dark-installed-skinny.png</image>
     </screenshot>
   </screenshots>
   <url type="homepage">https://github.com/ogri-la/strongbox</url>
@@ -54,6 +51,28 @@
   <url type="vcs-browser">https://github.com/ogri-la/strongbox</url>
   <content_rating type="oars-1.0"/>
   <releases>
+    <release version="7.5.0" date="2024-09-07">
+      <description>
+        <p>Added</p>
+        <ul>
+          <li>added another heuristic for guessing which asset in a Github release supports retail.</li>
+          <li>error handling for a few cases where uncaught exceptions were being swallowed.</li>
+        </ul>
+        <p>Changed</p>
+        <ul>
+          <li>installing an addon by file now overwrites/updates ignored addons and unpins pinned addons.</li>
+          <li>updated internal constants for The War Within.</li>
+          <li>updated internal constant for the date of the previous expansion.</li>
+          <li>trimmed the '(Flatpak)' from the 'Strongbox (Flatpak)' on the `.desktop` files distributed by Flatpak.</li>
+        </ul>
+        <p>Fixed</p>
+        <ul>
+          <li>fixed bug in emergency 'short' catalogue generation.</li>
+          <li>fixed bug where installing a file manually would bypass ignored and pinned addon checks.</li>
+          <li>fixed bug where ignore check bypassed on ungrouped/single directory addons.</li>
+        </ul>
+      </description>
+    </release>
     <release version="7.4.0" date="2024-07-19">
       <description>
         <p>Added</p>
