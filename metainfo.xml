@@ -2,7 +2,6 @@
 <component type="desktop-application">
   <id>la.ogri.strongbox</id>
   <name>Strongbox</name>
-  <developer_name>Torkus</developer_name>
   <keywords>
     <keyword>warcraft</keyword>
     <keyword>world of warcraft</keyword>
@@ -29,28 +28,22 @@
   <launchable type="desktop-id">la.ogri.strongbox.desktop</launchable>
   <screenshots>
     <screenshot type="default">
-      <image>https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/7.5.0/screenshots/installed.png</image>
-      <caption>Strongbox main window, standard width with default columns.</caption>
+      <image>https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/7.6.0/screenshots/installed.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/7.5.0/screenshots/dark-installed.png</image>
-      <caption>Strongbox main window, standard width with default columns (dark).</caption>
+      <image>https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/7.6.0/screenshots/dark-installed.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/7.5.0/screenshots/installed-fat.png</image>
-      <caption>Strongbox main window, wide width with many columns.</caption>
+      <image>https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/7.6.0/screenshots/installed-fat.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/7.5.0/screenshots/dark-installed-fat.png</image>
-      <caption>Strongbox main window, wide width with many columns (dark).</caption>
+      <image>https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/7.6.0/screenshots/dark-installed-fat.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/7.5.0/screenshots/installed-skinny.png</image>
-      <caption>Strongbox main window, narrow width with few columns.</caption>
+      <image>https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/7.6.0/screenshots/installed-skinny.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/7.5.0/screenshots/dark-installed-skinny.png</image>
-      <caption>Strongbox main window, narrow width with few columns (dark).</caption>
+      <image>https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/7.6.0/screenshots/dark-installed-skinny.png</image>
     </screenshot>
   </screenshots>
   <url type="homepage">https://github.com/ogri-la/strongbox</url>
@@ -58,6 +51,33 @@
   <url type="vcs-browser">https://github.com/ogri-la/strongbox</url>
   <content_rating type="oars-1.0"/>
   <releases>
+    <release version="7.6.0" date="2025-07-16">
+      <description>
+        <p>Added</p>
+        <ul>
+          <li>support for classic Mists of Pandaria</li>
+          <li>support for 'Standard' suffixed .toc file (retail)</li>
+          <li>added 'clean' to manage.sh script to remove any temporary files</li>
+          <li>added 'build-docker' to manage.sh script to run the tests in an environment similar to CI</li>
+        </ul>
+        <p>Changed</p>
+        <ul>
+          <li>bumped versions of latest WoW releases</li>
+          <li>minimum version of JDK bumped from 11 to 17 to incorporate bug fixes in newer releases of OpenJFX 22</li>
+          <li>bumped dependencies in general</li>
+          <li>changes to CI to move off of legacy/unsupported container images</li>
+        </ul>
+        <p>Fixed</p>
+        <ul>
+          <li>issue #440 "JNI error when launching on Endeavouros"</li>
+          <li>issue #441 "Crash on new Mac OS and JRE install"</li>
+        </ul>
+        <p>Removed</p>
+        <ul>
+          <li>some old Docker containers used for debugging CI</li>
+        </ul>
+      </description>
+    </release>
     <release version="7.5.0" date="2024-09-07">
       <description>
         <p>Added</p>

@@ -1,9 +1,9 @@
 app-id: la.ogri.strongbox
 runtime: org.freedesktop.Platform
-runtime-version: '23.08'
+runtime-version: '24.08'
 sdk: org.freedesktop.Sdk
 sdk-extensions: 
-    - org.freedesktop.Sdk.Extension.openjdk11
+    - org.freedesktop.Sdk.Extension.openjdk17
 
 command: strongbox
 
@@ -12,36 +12,35 @@ finish-args:
     - "--share=network"
     - "--device=dri"
     - "--filesystem=host"
-    - "--share=ipc"
 
 modules:
     - name: openjdk
       buildsystem: simple
       build-commands:
-        - /usr/lib/sdk/openjdk11/install.sh
+        - /usr/lib/sdk/openjdk17/install.sh
 
     - name: strongbox
       buildsystem: simple
       sources:
         - type: file
-          url: https://github.com/ogri-la/strongbox/releases/download/7.5.0/strongbox-7.5.0-standalone.jar
+          url: https://github.com/ogri-la/strongbox/releases/download/7.6.0/strongbox-7.6.0-standalone.jar
           dest-filename: app.jar
-          sha256: c03ccedc297790742bdb7d6848bc59741d83ae8fd3a3dbd642f7bd2ec66fc4f9
+          sha256: f06cd420c0bd396f6597e1137343c63c671705c1503a0845e74999e5fe3429f8
 
         - type: script
           commands:
             - /app/jre/bin/java -jar /app/bin/app.jar "$@"
 
         - type: file
-          url: https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/7.5.0/metainfo.xml
-          sha256: ebfdf1c785600c9694bd878c64ccd3a9450b9abb130c6dd0bba119165827c2e1
+          url: https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/7.6.0/metainfo.xml
+          sha256: c0376eb6d6198493257781351be09c5e74c19c69b6638e42077ddcd64b8d2852
 
         - type: file
-          url: https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/7.5.0/strongbox.desktop
+          url: https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/7.6.0/strongbox.desktop
           sha256: 960bcf565329cfd9f41f0e744a43071048e340578e04495b5c3d617a2f8408e5
 
         - type: file
-          url: https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/7.5.0/strongbox.svg
+          url: https://raw.githubusercontent.com/ogri-la/strongbox-flatpak/7.6.0/strongbox.svg
           sha256: e8d68fd32e96834d12940df27c2fd4c05fa303c1473e8f50b6a3a93f283bc2fc
 
       build-commands:
